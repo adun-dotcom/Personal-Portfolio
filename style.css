@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;800&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;800&family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{   
+    color: #fff !important;
+    font-size: 3rem !important;   
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+    color: #fff !important;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+#navbar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:  #BE3144;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  padding-bottom: 0 !important;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .nav-list li{
+      margin-right: 2rem;
+  }
+
+
+ .nav-list a {
+    display: block;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+  
+  .nav-list a:hover {
+    background: #45567D;
+  }
+
+
+.details{
+    background-image:linear-gradient(to right,
+    #240505,#2D2F31),
+                     url("images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 4rem 0;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.details .profile h1{
+    font-weight: 600;
+}
+
+
+.details .profile p{
+    color: #BE3144;
+    font-weight: 500;
+}
+
+
+#projects{
+    background-color:#45567D;
+    padding: 8rem 0;
+}
+
+
+#projects .project-text h1{
+    font-weight: 600;
+    max-width: 640px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem;
+}
+
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+
+.project-image{
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+
+.project-title{
+    background-color:#2D2F31;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 2rem 0;
+}
+
+
+.code{
+    padding: 0 1rem;
+    color: orange;
+    display: none;
+}
+
+
+.project-card:hover{
+    text-decoration: none;
+}
+
+
+.project-card:hover .code{
+    display: inline;
+}
+
+
+.project-btn .btn{
+    background-color:#2D2F31 ;
+    padding: 2rem;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 4rem;
+    border-radius: 5px;
+}
+
+
+.project-btn .btn:hover{
+    color: #fff;
+    background-color:  #BE3144;
+}
+
+
+#contact{
+    background-color:#2D2F31  ;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+#contact h1{
+    font-weight: bolder;
+    font-size: 7rem;
+}
+
+#contact .btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    font-size: 3rem;
+}
+
+#contact .contact-link{
+    padding-right: 2rem;
+    text-shadow: 2px 2px 1px #6d2727;
+    transition: transform 0.3s ease-out;  
+}
+
+#contact .contact-link:hover {
+    transform: translateY(10px);
+  }
+
+#contact .contact-text{
+    border-bottom: 5px solid  #BE3144;
+    padding-bottom: 20rem; 
+}
+
+#contact .contact-text p{
+    padding-bottom: 7rem;
+    padding-top: 2rem;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+#footer{
+    background-color: #2D2F31;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 400;
+    padding-bottom: 10rem;
+}
+
+#footer p{
+    margin: 2rem;
+}
+
+@media (max-width:800px){
+    body{
+        font-size: 2.2rem !important;
+    }
+
+    #navbar{
+        justify-content: center;
+    }
+
+    #contact{
+        padding-bottom: 2rem;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+}
